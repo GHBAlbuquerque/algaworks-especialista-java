@@ -1,4 +1,4 @@
-#🎓☕️  algaworks-especialista-java
+# algaworks-especialista-java 🎓☕️
 Repositório do curso Especialista Java da Algaworks.
 
 # 1. Introdução 👩‍🏫
