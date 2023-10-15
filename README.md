@@ -140,7 +140,24 @@ Para operações usando inteiros que resultem em pontos flutuantes:
 ```
 int x = 10;
 int y = 3;
-float resultado = x/y; //resultado 3.0
+float resultado = x/y; // resultado 3.0
 ```
 
-Compila normalmente, resultado é um número inteiro. A operação é feita usando tipos int, então o resultado é um int, ainda que colocado em uma variável tipo float. A atribuição é feita depois do cálculo.
+Compila normalmente, resultado é um número inteiro. A operação é feita usando tipos int, então o resultado é um int, ainda que colocado numa variável tipo float. A atribuição é feita depois do cálculo.
+
+Se eu quiser que seja dividido como um número de ponto flutuante, devo dividir por float:
+
+```
+int x = 10;
+float resultado = x/3f; // resultado 3.333
+```
+
+### 2.24 JShell
+
+Basta digitar jshell no terminar e assim é possível utilizar comandos java.
+É possível declarar variáveis, ver valor de variáveis (/vars) e realizar operações aritméticas.
+
+```
+jshell
+```
+
