@@ -101,3 +101,46 @@ Dará origem a um arquivo com extensão _.class_.
 * o literal numérico inteiro é sempre int, a não ser que seja declaradamente long (L).
 * o literal numérico decimal é sempre double, a não ser que seja declaradamente float (f).
 
+### 2.15 Conversão de tipos primitivos
+
+A conversão de um tipo maior para um menor, mesmo de um número que caiba, estoura o seguinte erro:
+
+```error: incompatible types: possible lossy conversion from long to int```
+
+É possível forçar o casting:
+```
+long x = 10;
+int y = (int) x; //casting
+```
+
+Entre ponto flutuante e inteiro também é necssário deixar explícito o casting:
+```
+double x = 100;
+int y = (int) x; //casting
+```
+
+### 2.17 Promoção Aritmética
+
+Operações aritméticas entre variáveis de tipos diferentes, o resultado sempre será igual ao tipo maior.
+```
+long x = 10;
+int y = 5;
+long resultado = x*y; // será do tipo long
+```
+
+Para operações entre inteiros e ponto flutuante (ex. long x float), o resultado vai ser sempre o ponto flutuante. 
+```
+long x = 10;
+float y = 5f;
+float resultado = x*y; // será do tipo float
+```
+
+Para operações usando inteiros que resultem em pontos flutuantes:
+
+```
+int x = 10;
+int y = 3;
+float resultado = x/y; //resultado 3.0
+```
+
+Compila normalmente, resultado é um número inteiro. A operação é feita usando tipos int, então o resultado é um int, ainda que colocado em uma variável tipo float. A atribuição é feita depois do cálculo.
