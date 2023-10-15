@@ -1,5 +1,6 @@
 # algaworks-especialista-java 🎓☕️
 Repositório do curso Especialista Java da Algaworks.
+https://www.algaworks.com/
 
 # 1. Introdução 👩‍🏫
 ### 1.5 Plataformas Java
@@ -24,6 +25,8 @@ A JVM emula uma máquina física e permite executar códigos pré-compilados (n�
 Código-fonte -> _ByteCode_ -> Binário -> Sistema Operacional
 
 ByteCode: não é legível para humanos e nem interpretável pela máquina, apenas a JVM consegue entender e traduzir as instruções. É necessário possuir a JVM compatível com o sistema operacional.
+
+O formato do arquivo bytecode é _.class_, e pode ser gerado através do comando _javac_ em uma classe _.java_.
 
 Não há relação entre a linguagem Java e o Bytecode. Pode ser escrito em qualquer linguagem (por exemplo, Kotlin).
 
@@ -74,5 +77,27 @@ OpenJDK Oracle -> evitar usar em produção pela falta de suporte a longe prazo.
 Neste projeto, será usada a distribuição Eclipse Temurin 17.0.2.
 
 
+# 2. Fundamentos Java 💻
+### 2.2 Compilando e executando um programa
 
+```javac Classe.java```
+Dará origem a um arquivo com extensão _.class_.
+
+```java Classe``` ou ```java Classe.java```, caso não tenha sido compilada de antemão, executa a classe.
+
+### 2.12 Tipos primitivos
+
+|Tipo|Bits|Mínimo|Máximo|
+|----|----|----|----|
+| boolean | 1 | false | true |
+| char | 16 | 0 | 2^16 - 1 |
+| byte | 8 | -2^7 | 2^7 - 1 (127) |
+| short | 16 | -2^15 | 2^15 - 1 (32_767) |
+| int | 32 | -2^31 | 2^31 - 1 (2_147_483_647)|
+| long | 64 | -2^63 | -2^63 - 1 |
+| float | 32 | - | - |
+| double  | 64 | - | - |
+
+* o literal numérico inteiro é sempre int, a não ser que seja declaradamente long (L).
+* o literal numérico decimal é sempre double, a não ser que seja declaradamente float (f).
 
