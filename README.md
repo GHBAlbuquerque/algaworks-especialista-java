@@ -2,7 +2,7 @@
 Repositório do curso Especialista Java da Algaworks.
 https://www.algaworks.com/
 
-# 1. Introdução 👩‍🏫
+## 1. Introdução 👩‍🏫
 ### 1.5 Plataformas Java
 Um software deveria ser capaz de rodar em diferentes máquinas.
 
@@ -77,7 +77,7 @@ OpenJDK Oracle -> evitar usar em produção pela falta de suporte a longe prazo.
 Neste projeto, será usada a distribuição Eclipse Temurin 17.0.2.
 
 
-# 2. Fundamentos Java 💻
+## 2. Fundamentos Java 💻
 ### 2.2 Compilando e executando um programa
 
 ```javac Classe.java```
@@ -160,4 +160,11 @@ Basta digitar jshell no terminar e assim é possível utilizar comandos java.
 ```
 jshell
 ```
+
+## 3. Estruturas de Controle e Operadores 🔁
+### 3.1 Operadores de Igualdade e Negação (unário)
+
+
+
+
 
