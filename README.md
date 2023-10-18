@@ -162,7 +162,49 @@ jshell
 ```
 
 ## 3. Estruturas de Controle e Operadores 🔁
-### 3.1 Operadores de Igualdade e Negação (unário)
+### 3.10 Escopo e Inicialização de Variáveis
+
+Quando falamos em tipos primitivos, as variáveis SEMPRE precisam ter valor. O código não compila.
+Erro ```variable might not have been initilized```.
+
+
+### 3.12 Cláusulas break e continue
+
+Funcionamento do switch: um _case_ encontrado, executa a instrução encontrada e todas as seguintes.
+Para sair após encontrar um caso é necessário usar a expressão ```break```.
+
+Interrompe a execução -> sai do switch.
+
+* Break: interrompe totalmente a execução de uma estrutura de repetição.
+
+* Continue: interrompe a atual iteração, iniciando a repetição seguinte.
+
+### 3.13 Switch Expressions
+
+Atribuição de variáveis diretamente através do switch:
+```
+     String horarioFuncionamento = switch (diaSemana) {
+            case "seg", "ter", "qua", "qui", "sex" -> "Fechado";
+            case "sab", "dom" -> "09:00 às 16:00";
+            default -> "fechado";
+        };
+```
+
+Utilização de lógica dento do case:
+```
+    System.out.printf("Horário de funcionamento: %s%n", switch (diaSemana) {
+        case "seg" -> {
+            if (mes == 12) {
+                yield "08:00 às 16:00";
+            }
+            yield "Fechado";
+        }
+        case "sab", "dom" -> "08:00 às 12:00";
+        default -> "Dia inválido";
+    });
+```
+
+
 
 
 
