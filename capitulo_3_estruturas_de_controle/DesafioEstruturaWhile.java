@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class DesafioEstruturaWhile {
 
     /*
@@ -7,6 +9,21 @@ public class DesafioEstruturaWhile {
     Por exemplo, se o número digitador for 98765, a saída deve ser 56789.
    */
     public static void main(String[] args) {
-        //TODO
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Digite um número inteiro:");
+        int inteiro = input.nextInt();
+
+        String numeroDigitado = String.valueOf(inteiro);
+        String numeroInvertido = "";
+        int contador = numeroDigitado.length()-1;
+
+        while(numeroInvertido.length() < numeroDigitado.length()) {
+            numeroInvertido += String.valueOf(numeroDigitado.charAt(contador)) ;
+            contador--;
+        }
+
+        System.out.println("Número digitado: " + numeroDigitado);
+        System.out.println("Número invertido: " + numeroInvertido);
     }
 }
