@@ -1,3 +1,5 @@
+package capitulo_3_estruturas_de_controle;
+
 import java.util.Scanner;
 
 public class DesafioEstruturaWhile {
@@ -16,10 +18,10 @@ public class DesafioEstruturaWhile {
 
         String numeroDigitado = String.valueOf(inteiro);
         String numeroInvertido = "";
-        int contador = numeroDigitado.length()-1;
+        int contador = numeroDigitado.length() - 1;
 
-        while(numeroInvertido.length() < numeroDigitado.length()) {
-            numeroInvertido += String.valueOf(numeroDigitado.charAt(contador)) ;
+        while (numeroInvertido.length() < numeroDigitado.length()) {
+            numeroInvertido += String.valueOf(numeroDigitado.charAt(contador));
             contador--;
         }
 

@@ -1,6 +1,9 @@
+package capitulo_3_estruturas_de_controle;
+
 import java.util.Scanner;
 
 public class InicializacaoEscopoVariaveis {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Frete cobrado?");
@@ -26,5 +29,6 @@ public class InicializacaoEscopoVariaveis {
         }
 
         double valorTotal = 10 + valorFrete;
+        System.out.printf("Valor total: %s", valorTotal);
     }
 }

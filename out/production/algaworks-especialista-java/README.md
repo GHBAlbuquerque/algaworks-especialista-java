@@ -224,18 +224,7 @@ Utilização de lógica dento do case:
 
 ### 4.10 Debugger
 
-_Watches_
 
-Clicando no + no debugger, é possível acompanhar (watch) uma expressão para monitorar alteração de valor, por exemplo.
-(shift+command+enter) ou botão direito > new watch. 👓
-
-🚨 Os watches ficam entre execuções do debugger.
-
-_Loggers_
-
-É possível alterar um breakpoint para que ele crie logs durante a execução.
-
-> Botão direito no breakpoint >> tirar a marcação 'Suspend' para não parar a exec >> Log 'evaluate and log' e podemos colocar uma expressão
 
 
 
