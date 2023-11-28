@@ -238,6 +238,31 @@ _Loggers_
 > Botão direito no breakpoint >> tirar a marcação 'Suspend' para não parar a exec >> Log 'evaluate and log' e podemos colocar uma expressão
 
 
+## 5. Progrmação Orientada a Objetos
+### 5.1 Paradigmas de Programação
 
+Classificam as linguagens pela sua forma de funcionar
+
+IMPERATIVA - muda o estado através de comandos passo a passo
+
+	PROCEDURAL: especifica as instruções passo a passo, executadas em ordem
+	* suporte a procedimentos
+	* variáveis
+	* (Java também é procedural)
+			
+	ORIENTADA A OBJETOS: 
+	* Simula o mundo real dentro do mundo computacional
+	* Estruturas reais ou abstratas
+	* diversas linguagem usam o paradigma da POO
+
+
+DECLARATIVA - declara a lógica do processamento, sem descrever o como
+
+	FUNCIONAL:
+	* função é uma expressão que tem entrada e saída
+	* a partir do java 8 temos muito suporte à prog. funcional
+
+	REATIVA:
+	* foco no desenvolvimento de código assíncrono e não-bloqueante
 
 
